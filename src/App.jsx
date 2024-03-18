@@ -6,15 +6,15 @@ function App() {
   const [nomeUsuario, setNomeUsuario] = useState('')
 
   return (
-    <>
-      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+    <div className="container">
+      <input type="text" className="input" required placeholder="Digite o nome do usuario Github" onBlur={(e) => setNomeUsuario(e.target.value)} />
       {nomeUsuario.length > 4 && (
         <>
           <Perfil nomeUsuario={nomeUsuario} />
           <ReposList nomeUsuario={nomeUsuario} />
         </>
       )}
-    </>
+    </div>
   )
 }
 

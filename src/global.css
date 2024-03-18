@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 
-.container {
+.container{
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
@@ -13,6 +13,18 @@
 
 /* //criando Variaveis CSS */
 :root {
-    --corPrincipal: #f9ca24;
-    --corSecundaria: #111;
+    --corPrincipal: #7a745c;
+    --corSecundaria: #f6f6f6;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--corPrincipal);
+    border-radius: 6px;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
